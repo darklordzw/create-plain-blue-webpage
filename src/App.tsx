@@ -2,6 +2,7 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import GreenPage from './pages/GreenPage';
+import BuildifyFeedback from "./components/BuildifyFeedback";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         </Routes>
       </div>
     </BrowserRouter>
+<BuildifyFeedback />
   );
 }
 
