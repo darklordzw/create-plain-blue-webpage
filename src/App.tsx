@@ -1,31 +1,27 @@
+import { Toaster } from "@/components/ui/toaster";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Index from "./pages/Index";
+import NotFound from "./pages/NotFound";
 
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import GreenPage from './pages/GreenPage';
-import BuildifyFeedback from "./components/BuildifyFeedback";
+const queryClient = new QueryClient();
 
-function App() {
-  return (
-    <BrowserRouter>
-      <nav className="fixed top-0 left-0 right-0 bg-background/80 backdrop-blur-sm border-b border-border z-50">
-        <div className="container mx-auto px-4 py-4 flex gap-6">
-          <Link to="/" className="text-foreground hover:text-primary transition-colors">
-            Home
-          </Link>
-          <Link to="/green" className="text-foreground hover:text-primary transition-colors">
-            Green Page
-          </Link>
-        </div>
-      </nav>
-      <div className="pt-16">
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/green" element={<GreenPage />} />
+          <Route path="/" element={<Index />} />
+          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
-      </div>
-    </BrowserRouter>
-<BuildifyFeedback />
-  );
-}
+      </BrowserRouter>
+    </TooltipProvider>
+  </QueryClientProvider>
+);
 
 export default App;

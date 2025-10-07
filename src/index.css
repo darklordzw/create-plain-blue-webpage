@@ -1,70 +1,49 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    /* Blue Page Theme */
-    --blue-page: 220 100% 95%;
-    --blue-page-foreground: 220 90% 15%;
-    
-    /* Green Page Theme */
-    --green-page: 140 60% 95%;
-    --green-page-foreground: 140 80% 15%;
-    
-    /* Base Colors */
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    
-    /* Primary - Blue */
-    --primary: 220 90% 56%;
-    --primary-foreground: 210 40% 98%;
-    
-    /* Secondary - Green */
-    --secondary: 140 70% 45%;
-    --secondary-foreground: 140 10% 98%;
-    
-    /* Accent */
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    
-    /* Muted */
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    
-    /* Destructive */
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    
-    /* Border & Input */
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 220 90% 56%;
-    
-    /* Radius */
     --radius: 0.5rem;
+    
+    /* Blue theme colors */
+    --background: 220 100% 97%;
+    --foreground: 220 90% 15%;
+
+    --card: 220 100% 99%;
+    --card-foreground: 220 90% 15%;
+
+    --popover: 220 100% 99%;
+    --popover-foreground: 220 90% 15%;
+
+    --primary: 220 90% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 30% 90%;
+    --secondary-foreground: 220 90% 15%;
+
+    --muted: 220 30% 95%;
+    --muted-foreground: 220 30% 40%;
+
+    --accent: 220 70% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 30% 85%;
+    --input: 220 30% 85%;
+    --ring: 220 90% 50%;
   }
 }
 
-@layer utilities {
-  .bg-gradient-blue {
-    background: linear-gradient(135deg, hsl(220 90% 56%) 0%, hsl(200 90% 45%) 100%);
+@layer base {
+  * {
+    @apply border-border;
   }
-  
-  .bg-gradient-green {
-    background: linear-gradient(135deg, hsl(140 70% 45%) 0%, hsl(120 65% 35%) 100%);
-  }
-  
-  .shadow-blue {
-    box-shadow: 0 20px 50px -12px hsl(220 90% 56% / 0.25);
-  }
-  
-  .shadow-green {
-    box-shadow: 0 20px 50px -12px hsl(140 70% 45% / 0.25);
+
+  body {
+    @apply bg-background text-foreground;
+    min-height: 100vh;
   }
 }

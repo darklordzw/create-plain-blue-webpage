@@ -1,30 +1,15 @@
-
 ### Requirements
-- Multi-page website with color-themed pages
-- Blue homepage and green secondary page
-- Navigation between pages
-- Semantic design system with theme-specific tokens
+- Simple webpage with color theme switcher capability
+- Clean, minimal design with semantic design system
+- User can request different color schemes (blue, green, etc.)
 
 ### Designs
-- Fixed navigation bar with links to both pages
-- Each page has its own color scheme (blue/green)
-- Hero sections with gradient text and background images
-- Responsive layout with proper spacing
+- Centered layout with title, description, and color swatches
+- Semantic design tokens using CSS custom properties (HSL values)
+- Responsive design with proper spacing and typography
 
 ### Tasks
-- [x] Create blue homepage (25 LOC × 10 = 250 tokens)
-  - Created HomePage.tsx with blue theme
-  - Ocean-themed imagery and gradients
-  
-- [x] Create green page (25 LOC × 10 = 250 tokens)
-  - Created GreenPage.tsx with green theme
-  - Nature-themed imagery and gradients
-  
-- [x] Setup routing and navigation (30 LOC × 10 = 300 tokens)
-  - Added React Router with navigation bar
-  - Links to both pages
-  
-- [x] Design system for multi-theme support (70 LOC × 10 = 700 tokens)
-  - CSS custom properties for blue and green themes
-  - Tailwind config with semantic tokens
-  - Gradient and shadow utilities
+- [x] Convert page to blue theme (50 LOC × 10 = 500 tokens)
+  - Updated all color tokens from green (hue 120) to blue (hue 220)
+  - Changed page title and description
+  - Files modified: src/index.css, src/pages/Index.tsx
