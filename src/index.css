@@ -6,34 +6,34 @@
   :root {
     --radius: 0.5rem;
     
-    /* Green theme colors */
-    --background: 120 100% 97%;
-    --foreground: 120 90% 15%;
+    /* Orange theme colors */
+    --background: 30 100% 97%;
+    --foreground: 30 90% 15%;
 
-    --card: 120 100% 99%;
-    --card-foreground: 120 90% 15%;
+    --card: 30 100% 99%;
+    --card-foreground: 30 90% 15%;
 
-    --popover: 120 100% 99%;
-    --popover-foreground: 120 90% 15%;
+    --popover: 30 100% 99%;
+    --popover-foreground: 30 90% 15%;
 
-    --primary: 120 90% 40%;
+    --primary: 30 90% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 120 30% 90%;
-    --secondary-foreground: 120 90% 15%;
+    --secondary: 30 30% 90%;
+    --secondary-foreground: 30 90% 15%;
 
-    --muted: 120 30% 95%;
-    --muted-foreground: 120 30% 40%;
+    --muted: 30 30% 95%;
+    --muted-foreground: 30 30% 40%;
 
-    --accent: 120 70% 50%;
+    --accent: 30 85% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 120 30% 85%;
-    --input: 120 30% 85%;
-    --ring: 120 90% 40%;
+    --border: 30 30% 85%;
+    --input: 30 30% 85%;
+    --ring: 30 90% 50%;
   }
 }
 
